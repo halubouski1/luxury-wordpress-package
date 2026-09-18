@@ -1,0 +1,13 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "features": { "networking": true },
+  "login": true,
+  "steps": [
+    { "step": "setSiteOptions", "options": { "blogname": "Luxury Apart Hotel (demo)", "permalink_structure": "/%postname%/" } },
+    { "step": "installPlugin", "pluginData": { "resource": "url", "url": "https://raw.githubusercontent.com/GITHUB_USER/luxury-apart-hotel-demo/main/luxury-editorial-plugin.zip" } },
+    { "step": "installTheme", "themeData": { "resource": "url", "url": "https://raw.githubusercontent.com/GITHUB_USER/luxury-apart-hotel-demo/main/luxury-apart-hotel-theme.zip" } },
+    { "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; wp_set_current_user(1); lux_import_starter(true); flush_rewrite_rules();" }
+  ]
+}

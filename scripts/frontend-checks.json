@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "home DOM mount and data passed",
+    "about DOM mount and data passed",
+    "owners DOM mount and data passed",
+    "contact DOM mount and data passed",
+    "guides DOM mount and data passed",
+    "experiences DOM mount and data passed",
+    "article DOM mount and data passed"
+  ],
+  "method": "JSDOM functional smoke checks; not browser visual QA"
+}

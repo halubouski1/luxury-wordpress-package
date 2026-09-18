@@ -1,0 +1,54 @@
+/* Client-supplied mark: white over photography, black on the light interface. */
+.brand .wordmark-image,.mobile-menu-top .wordmark-image{width:138px;height:auto;object-fit:contain;filter:brightness(0)}
+.brand-footer .wordmark-image{width:180px}
+.hero-logo.brand .wordmark-image{width:clamp(250px,34vw,490px);filter:none}
+.mobile-menu-top .wordmark-image{width:142px}
+
+/* Black interface actions, with white booking actions over the opening and closing photos. */
+.button,.button-dark,.button-light,.button-outline,.menu-trigger,.menu-close,.back-top,.card-open{background:#000;color:#fff;border-color:#000}
+.button:hover,.menu-trigger:hover,.menu-close:hover,.footer-bottom .back-top:hover,.apartment-photo-link:hover .card-open{background:#202020;color:#fff;border-color:#202020}
+.button:active,.menu-trigger:active,.menu-close:active,.back-top:active{background:#080808}
+.button:focus-visible,.menu-trigger:focus-visible,.menu-close:focus-visible,.back-top:focus-visible{outline:2px solid #a7803e;outline-offset:4px;box-shadow:0 0 0 2px #fff}
+.skip-link{background:#000;z-index:120}
+.hero .button,.final-cta .button{background:#fff;color:#111;border-color:#fff}
+.hero .button:hover,.final-cta .button:hover{background:#eee;color:#111;border-color:#eee}
+.hero .button:active,.final-cta .button:active{background:#ddd;border-color:#ddd}
+.hero .button:focus-visible,.final-cta .button:focus-visible{outline-color:#fff;outline-offset:6px;box-shadow:0 0 0 2px #111}
+
+/* A small signature, then seven architectural shutters opening onto Batumi. */
+.arrival{display:none;position:fixed;inset:0;z-index:110;overflow:hidden;pointer-events:none}
+.arrival-shutters{position:absolute;inset:0;display:grid;grid-template-columns:repeat(7,1fr)}
+.arrival-shutter{height:100%;width:calc(100% + 1px);background:#080808;transform-origin:top;will-change:transform}
+.arrival-mark{position:absolute;left:50%;top:50%;width:112px;transform:translate(-50%,-50%);will-change:opacity,transform}
+.arrival-mark .wordmark-image{width:100%;height:auto;object-fit:contain}
+html[data-intro] .arrival{display:block}
+html[data-intro] {overflow:hidden}
+html[data-intro="waiting"] .arrival-mark{animation:arrival-mark-in .7s ease-out both}
+html[data-intro="revealing"] .arrival{animation:arrival-complete 2.1s linear both}
+html[data-intro="revealing"] .arrival-mark{animation:arrival-mark-out .48s ease-in both}
+html[data-intro="revealing"] .arrival-shutter{animation:arrival-shutter-out 1.5s cubic-bezier(.76,0,.24,1) both}
+html[data-intro="revealing"] .shutter-0{animation-delay:.54s}
+html[data-intro="revealing"] .shutter-1{animation-delay:.45s}
+html[data-intro="revealing"] .shutter-2{animation-delay:.36s}
+html[data-intro="revealing"] .shutter-3{animation-delay:.27s}
+html[data-intro="revealing"] .shutter-4{animation-delay:.36s}
+html[data-intro="revealing"] .shutter-5{animation-delay:.45s}
+html[data-intro="revealing"] .shutter-6{animation-delay:.54s}
+html[data-intro="revealing"] .hero-picture{animation:arrival-city 2.1s cubic-bezier(.22,.61,.36,1) both}
+@keyframes arrival-mark-in{from{opacity:0;transform:translate(-50%,calc(-50% + 5px))}to{opacity:1;transform:translate(-50%,-50%)}}
+@keyframes arrival-mark-out{to{opacity:0;transform:translate(-50%,calc(-50% - 7px))}}
+@keyframes arrival-shutter-out{from{transform:scaleY(1)}to{transform:scaleY(0)}}
+@keyframes arrival-city{from{transform:scale(1.045)}to{transform:scale(1)}}
+@keyframes arrival-complete{0%,99%{visibility:visible}100%{visibility:hidden}}
+
+/* Lenis moves the native document: sticky scenes keep their current geometry. */
+html.lenis,html.lenis body{height:auto}
+html.lenis.lenis-smooth{scroll-behavior:auto!important}
+@media(max-width:600px){
+ .brand .wordmark-image{width:112px}
+ .brand-footer .wordmark-image{width:150px}
+ .hero-logo.brand .wordmark-image{width:clamp(230px,68vw,340px)}
+ .arrival-mark{width:96px}
+}
+@media(max-width:380px){.brand .wordmark-image{width:102px}.brand-footer .wordmark-image{width:140px}}
+@media(prefers-reduced-motion:reduce){html[data-intro]{overflow:visible}.arrival{display:none!important}.hero-picture{animation:none!important}}
