@@ -172,3 +172,6 @@
 }
 @media(max-height:700px) and (min-width:700px){.chapter-first,.chapter-second{top:41%}.chapter-first h1,.chapter-display{font-size:76px}.chapter-description{font-size:15px;margin-top:18px}.chapter-bottom{bottom:23px}.chapter-first>.eyebrow{margin-bottom:17px}.chapter-closing .chapter-first h2{font-size:65px}}
 @media(prefers-reduced-motion:reduce){.chapter-image img{transform:none}.scroll-chapter{height:auto!important}.chapter-pin{position:relative!important}.chapter-second{display:none!important}.chapter-first{opacity:1!important;visibility:visible!important}.editorial-card-image img{transition:none}.process-photo-layer{will-change:auto}}
+
+.brand-footer .footer-logo-image{display:block;width:120px;height:auto;filter:none;object-fit:contain}
+@media (max-width:600px){.brand-footer .footer-logo-image{width:96px}}
