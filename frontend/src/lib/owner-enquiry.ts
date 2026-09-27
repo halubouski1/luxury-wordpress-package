@@ -13,4 +13,4 @@ export function validateOwnerEnquiry(data:OwnerEnquiry):{field:keyof OwnerEnquir
  if(!propertyTypes.some(c=>c===data.propertyType))return {field:"propertyType",message:"Please select a property type."};
  return null;
 }
-export function ownerEnquiryMailto(data:OwnerEnquiry){return `mailto:info@luxuryaparthotel.ge?subject=Property%20management%20enquiry&body=${encodeURIComponent(`Hello, I would like to discuss property management.\n\nName: ${data.name.trim()}\nEmail: ${data.email.trim()}\nPhone: ${data.phone.trim()}\nCity: ${data.city}\nProperty type: ${data.propertyType}`)}`;}
+export function ownerEnquiryMailto(data:OwnerEnquiry){return `mailto:ownerrelations@luxuryaparthotel.ge?subject=Property%20management%20enquiry&body=${encodeURIComponent(`Hello, I would like to discuss property management.\n\nName: ${data.name.trim()}\nEmail: ${data.email.trim()}\nPhone: ${data.phone.trim()}\nCity: ${data.city}\nProperty type: ${data.propertyType}`)}`;}

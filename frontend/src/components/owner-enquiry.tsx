@@ -19,6 +19,6 @@ export function OwnerEnquiryForm(){
   {error&&<p id="owner-form-error" className="owner-form-error" role="alert">{error.message}</p>}
   <button type="submit" className="button owner-form-submit">Continue by email<ArrowUpRight size={19}/></button>
   <p className="owner-form-note" role={ready?"status":undefined}>{ready?"Your email app should open with these details. Send the email there to complete your request.":"Opens your email app with your details. All fields are required."}</p>
-  <a className="owner-form-direct" href="mailto:info@luxuryaparthotel.ge">info@luxuryaparthotel.ge</a>
+  <a className="owner-form-direct" href="mailto:ownerrelations@luxuryaparthotel.ge">ownerrelations@luxuryaparthotel.ge</a>
  </form>;
 }

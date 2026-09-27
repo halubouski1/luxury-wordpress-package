@@ -42,5 +42,5 @@ export function quizMailto(data:PropertyQuizData){
  const service=assessmentServices.find(s=>s.id===data.service)?.title||"Property enquiry";
  const details=(serviceDetails[data.service]||[]).filter(f=>data.details[f.key]).map(f=>`${f.label}: ${data.details[f.key]}`).join("\n");
  const body=`Hello, I would like to request a professional property consultation.\n\nService: ${service}\nLocation: ${quizLocation(data)}\nProperty type: ${data.propertyType}\n${data.service==="investment"?"Preferred area":"Total area"}: ${data.area}\n\n${details}${data.notes.trim()?`\nAdditional notes: ${data.notes.trim()}`:""}\n\nName: ${data.name.trim()}\nEmail: ${data.email.trim()}\nPhone: ${data.phone.trim()}\nPreferred contact: ${data.contactMethod}`;
- return `mailto:info@luxuryaparthotel.ge?subject=${encodeURIComponent(service+" enquiry")}&body=${encodeURIComponent(body)}`;
+ return `mailto:${data.service==="investment"||data.service==="sale"?"sales@luxuryaparthotel.ge":"ownerrelations@luxuryaparthotel.ge"}?subject=${encodeURIComponent(service+" enquiry")}&body=${encodeURIComponent(body)}`;
 }

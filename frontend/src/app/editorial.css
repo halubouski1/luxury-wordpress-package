@@ -175,3 +175,5 @@
 
 .brand-footer .footer-logo-image{display:block;width:120px;height:auto;filter:none;object-fit:contain}
 @media (max-width:600px){.brand-footer .footer-logo-image{width:96px}}
+
+.contact-departments{margin-top:37px;padding-top:29px;border-top:1px solid var(--line)}.contact-departments .eyebrow{color:#6d7663;margin-bottom:10px;font-size:12px}.contact-departments ul{list-style:none;margin:0;padding:0;display:grid}.contact-departments li{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 24px;padding:14px 0;border-bottom:1px solid var(--line)}.contact-departments li:last-child{border-bottom:0}.contact-departments span{font-size:14px;color:#60675c}.contact-departments a{font-size:17px;letter-spacing:-.01em}.contact-departments a:hover{text-decoration:underline;text-underline-offset:5px}@media (max-width:600px){.contact-departments li{flex-direction:column;gap:3px}.contact-departments a{font-size:16px;overflow-wrap:anywhere}}

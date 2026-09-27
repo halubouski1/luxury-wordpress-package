@@ -32,7 +32,7 @@ export function PropertyQuiz(){
    </div>
    {error&&<p className="quiz-error" id="quiz-error" role="alert">{error.message}</p>}
    <div className="quiz-actions">{step>0?<button type="button" className="quiz-back" onClick={()=>go(step-1)}>Back</button>:<p>Four simple steps.<br/>One thoughtful conversation.</p>}<button type="submit" className="button">{step===3?"Continue by email":"Continue"}{step===3?<ArrowUpRight size={19}/>:<ArrowRight size={19}/>}</button></div>
-   {step===3&&<p className="quiz-delivery" role={ready?"status":undefined}>{ready?"Your email app should open with your answers. Send the email there to complete your request.":"All contact fields are required. Continue opens your email app with your answers."} <a href="mailto:info@luxuryaparthotel.ge">info@luxuryaparthotel.ge</a></p>}
+   {step===3&&<p className="quiz-delivery" role={ready?"status":undefined}>{ready?"Your email app should open with your answers. Send the email there to complete your request.":"All contact fields are required. Continue opens your email app with your answers."} <a href="mailto:ownerrelations@luxuryaparthotel.ge">ownerrelations@luxuryaparthotel.ge</a></p>}
   </form>
  </section>;
 }
