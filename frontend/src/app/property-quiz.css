@@ -2,3 +2,18 @@
 @media(max-width:1000px){.quiz-services{grid-template-columns:repeat(2,minmax(0,1fr))}.quiz-service{min-height:210px}.quiz-contact-layout{gap:30px}.quiz-panel{padding:30px}.quiz-intro{gap:25px 6%}}
 @media(max-width:699px){.property-quiz{padding-block:20px 65px;scroll-margin-top:90px}.quiz-intro{display:block;margin-bottom:30px}.quiz-intro>.eyebrow{font-size:10px;margin-bottom:24px}.quiz-intro>p:last-child{font-size:16px;margin-top:25px}.inner-page .quiz-intro h2{font-size:51px}.quiz-panel{padding:23px 20px}.quiz-steps{gap:8px}.quiz-steps button{flex-direction:column;align-items:start;gap:9px;font-size:11px}.quiz-step-number{width:29px;height:29px}.quiz-step-content{padding-top:29px;min-height:0}.quiz-step-heading{margin-bottom:26px}.quiz-step-heading>p:last-child{font-size:14px}.quiz-services,.quiz-fields{grid-template-columns:1fr}.quiz-service{min-height:0;padding:22px 22px 22px 67px}.quiz-service-icon{position:absolute;left:22px;top:26px;width:23px}.quiz-service-title{padding-right:15px;font-size:16px;margin-bottom:6px}.quiz-service-description{max-width:290px}.quiz-service>[data-slot="radio-group-item"]{right:14px;top:16px;width:14px;height:14px}.quiz-contact-layout{display:block}.quiz-review{margin-top:30px;padding:22px}.quiz-actions{gap:16px;padding-top:23px;margin-top:28px}.quiz-actions>.button{min-width:0;gap:20px;padding:17px 21px;font-size:13px}.quiz-actions>p{font-size:10px}.quiz-fields{gap:25px}}
 @media(prefers-reduced-motion:reduce){.quiz-step-content{animation:none}.quiz-progress>span,.quiz-service{transition:none}}
+
+/* Owner forms: larger, darker text for readability (inputs, placeholders, labels, hints) */
+.quiz-field,.owner-field{font-size:15px;color:#1f251c}
+.quiz-field input,.quiz-field .quiz-select,.quiz-field textarea,.owner-field input,.owner-field .owner-select{font-size:17px;color:#151a13}
+.quiz-field input::placeholder,.quiz-field textarea::placeholder,.quiz-select[data-placeholder],.owner-field input::placeholder,.owner-select[data-placeholder]{color:#4f5746;font-size:17px}
+.quiz-select [data-slot=select-value],.owner-select [data-slot=select-value]{font-size:17px}
+[data-slot=select-item]{font-size:16px;color:#1d2319}
+.quiz-steps button{font-size:15px;color:#4d5544}
+.quiz-step-heading>.eyebrow,.quiz-review>.eyebrow,.owner-enquiry-form>.eyebrow{font-size:12px;color:#4f5746}
+.quiz-step-heading>p:last-child{font-size:16px;color:#454d3d}
+.quiz-service-description{font-size:14px;color:#4f5745}
+.quiz-actions>p,.quiz-delivery,.owner-form-note{font-size:14px;color:#4f5745}
+.quiz-review-row{font-size:15px}
+.quiz-review-row dt{font-size:12px;color:#4f5745}
+@media (max-width:700px){.quiz-steps button{font-size:12px}.quiz-actions>p{font-size:12px}.quiz-step-heading>p:last-child{font-size:15px}}

@@ -5,7 +5,7 @@ export const assessmentServices=[
  {id:"assessment",title:"Property assessment",description:"Understand your property’s condition and potential."},
  {id:"investment",title:"Investment consultation",description:"Explore a property search around your goals and preferences."}
 ] as const;
-export const areaOptions=["Under 35 m²","35–60 m²","60–100 m²","100–200 m²","200–500 m²","Over 500 m²","Not sure yet"];
+export const areaOptions=["Under 25 m²","25–40 m²","40–60 m²","60–100 m²","100–200 m²","200–500 m²","Over 500 m²","Not sure yet"];
 export type DetailField={key:string;label:string;options?:readonly string[];placeholder?:string;optional?:boolean};
 const condition:DetailField={key:"condition",label:"Property condition",options:["Ready to use","Furnished — needs preparation","Renovation needed","Under construction"]};
 const bedrooms:DetailField={key:"bedrooms",label:"Bedrooms / units",options:["Studio","1 bedroom","2 bedrooms","3 bedrooms","4+ bedrooms","Multiple units"]};
@@ -13,7 +13,7 @@ export const serviceDetails:Record<string,DetailField[]>={
  management:[condition,bedrooms,{key:"rentalStatus",label:"Current rental status",options:["Not rented yet","Short-term rentals","Long-term rental","Managed by another company"]},{key:"timing",label:"When would you like to start?",options:["As soon as possible","Within 1–3 months","Within 3–6 months","Exploring options"]}],
  sale:[condition,bedrooms,{key:"timing",label:"When would you like to sell?",options:["As soon as possible","Within 3–6 months","Within 6–12 months","Exploring options"]},{key:"askingPrice",label:"Target asking price (optional)",placeholder:"Amount and currency",optional:true}],
  assessment:[condition,{key:"purpose",label:"What would you like to understand?",options:["Market value","Rental potential","Readiness for a sale","Renovation needs"]},{key:"occupancy",label:"Current occupancy",options:["Vacant","Owner-occupied","Occupied by tenants","Under construction"]},{key:"timing",label:"Preferred timing",options:["As soon as possible","Within a month","Within 3 months","No fixed date"]}],
- investment:[{key:"budget",label:"Indicative purchase budget",options:["Under GEL 260,000","GEL 260,000–650,000","GEL 650,000–1,300,000","Over GEL 1,300,000","Prefer to discuss"]},{key:"goal",label:"Your main goal",options:["Rental income","Personal use","Capital growth","Mixed personal and rental use"]},{key:"timing",label:"Purchase timeframe",options:["Within 3 months","3–6 months","6–12 months","Exploring options"]}]
+ investment:[{key:"budget",label:"Indicative purchase budget",options:["Under USD 100,000","USD 100,000–250,000","USD 250,000–500,000","Over USD 500,000","Prefer to discuss"]},{key:"goal",label:"Your main goal",options:["Rental income","Personal use","Capital growth","Mixed personal and rental use"]},{key:"timing",label:"Purchase timeframe",options:["Within 3 months","3–6 months","6–12 months","Exploring options"]}]
 };
 export type PropertyQuizData={service:string;country:string;otherCountry:string;city:string;otherCity:string;propertyType:string;area:string;details:Record<string,string>;notes:string;name:string;email:string;phone:string;contactMethod:string};
 export const initialQuizData:PropertyQuizData={service:"",country:"Georgia",otherCountry:"",city:"",otherCity:"",propertyType:"",area:"",details:{},notes:"",name:"",email:"",phone:"",contactMethod:"Email"};
