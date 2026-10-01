@@ -9,7 +9,7 @@ export const owners="/for-owners/";
 export const navigation=[
  {label:"Our apartments",href:booking},
  {label:"Experiences",href:"/experiences/"},
- {label:"Guides & Insights",href:"/guides-insights/"},
+ {label:"Guide",href:"/guide/"},
  {label:"For owners",href:owners},
  {label:"About us",href:"/about-us/"},
  {label:"Contact us",href:"/contact-us/"},
