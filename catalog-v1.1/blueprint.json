@@ -13,7 +13,7 @@
     {
       "step": "setSiteOptions",
       "options": {
-        "blogname": "Luxury Apart Hotel (demo)",
+        "blogname": "Luxury Apart Hotel Group (demo)",
         "permalink_structure": "/%postname%/"
       }
     },
@@ -21,14 +21,14 @@
       "step": "installPlugin",
       "pluginData": {
         "resource": "url",
-        "url": "https://cdn.jsdelivr.net/gh/halubouski1/luxury-wordpress-package@69ec4e8499084e724f133883891c4360e3a740b9/catalog-v1.1/luxury-editorial-plugin.zip"
+        "url": "https://raw.githubusercontent.com/halubouski1/luxury-wordpress-package/bb4419ed2effc1d01f4089a08225abf1645921fd/catalog-v1.1/luxury-editorial-plugin.zip"
       }
     },
     {
       "step": "installTheme",
       "themeData": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/halubouski1/luxury-wordpress-package/69ec4e8499084e724f133883891c4360e3a740b9/catalog-v1.1/luxury-apart-hotel-theme.zip"
+        "url": "https://raw.githubusercontent.com/halubouski1/luxury-wordpress-package/bb4419ed2effc1d01f4089a08225abf1645921fd/catalog-v1.1/luxury-apart-hotel-theme.zip"
       }
     },
     {
