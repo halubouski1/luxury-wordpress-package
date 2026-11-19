@@ -21,7 +21,7 @@
       "step": "installPlugin",
       "pluginData": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/halubouski1/luxury-wordpress-package/cc7a191ec4ef6a1bc1c2526580014c64c62c6e9d/catalog-v1.1/luxury-editorial-plugin.zip"
+        "url": "https://raw.githubusercontent.com/halubouski1/luxury-wordpress-package/d1682eddf6b416b70d47aa7480152334fb332bc2/catalog-v1.1/luxury-editorial-plugin.zip"
       }
     },
     {
