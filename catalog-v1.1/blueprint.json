@@ -21,14 +21,14 @@
       "step": "installPlugin",
       "pluginData": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/halubouski1/luxury-wordpress-package/639ed1d4f994a3da9e992a28add7dee9d75b9d60/catalog-v1.1/luxury-editorial-plugin.zip"
+        "url": "https://raw.githubusercontent.com/halubouski1/luxury-wordpress-package/38a7e91fe5173064c427f87291aff56a13c4005b/catalog-v1.1/luxury-editorial-plugin.zip"
       }
     },
     {
       "step": "installTheme",
       "themeData": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/halubouski1/luxury-wordpress-package/639ed1d4f994a3da9e992a28add7dee9d75b9d60/catalog-v1.1/luxury-apart-hotel-theme.zip"
+        "url": "https://raw.githubusercontent.com/halubouski1/luxury-wordpress-package/38a7e91fe5173064c427f87291aff56a13c4005b/catalog-v1.1/luxury-apart-hotel-theme.zip"
       }
     },
     {
